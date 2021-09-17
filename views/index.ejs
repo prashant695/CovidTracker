@@ -21,10 +21,12 @@
         <div class="box" id="map">
             <h2 class="h-secondary center"></h2>
             <p class="center">
+                
                 <script>
-                    var key = process.env.API_KEY
-                    console.log(key)
-                    L.mapbox.accessToken = key;
+                 
+                    console.log("hi");
+                    console.log("<%=api_key  %>");
+                    L.mapbox.accessToken = "<%=api_key  %>"
                     var map = L.mapbox.map('map')
                         .setView([10, -34.50], 4)
                         .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
