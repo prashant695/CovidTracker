@@ -1,8 +1,7 @@
 const express = require("express")
 const path = require("path")
 const app = express();
-const port = 80;
-// require('dotenv').config();
+const port = process.env.PORT || 80;
 
 app.use('/static', express.static('static'));
 app.use(express.urlencoded());

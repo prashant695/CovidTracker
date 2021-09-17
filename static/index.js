@@ -39,4 +39,4 @@ function map() {
         })
 }
 map();
-// setInterval(map, 100000);
+setInterval(map, 100000);
