@@ -22,7 +22,8 @@
             <h2 class="h-secondary center"></h2>
             <p class="center">
                 <script>
-                    var key = 'pk.eyJ1IjoicHJhc2hhbnQ2OTUiLCJhIjoiY2t0ZnVjcG12MGMxMTJ2anljdHFhNDJiNCJ9.4ukwjpum3X-3wTzeLvVTZw';
+                    var key = process.env.API_KEY
+                    console.log(key)
                     L.mapbox.accessToken = key;
                     var map = L.mapbox.map('map')
                         .setView([10, -34.50], 4)

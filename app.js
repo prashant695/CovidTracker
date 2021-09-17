@@ -1,6 +1,7 @@
 const express = require("express")
 const path = require("path")
 const app = express();
+require('dotenv').config()
 const port = process.env.PORT || 80;
 
 app.use('/static', express.static('static'));
