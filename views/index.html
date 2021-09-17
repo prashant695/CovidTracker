@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/map.css">
+    <script src="./static/index.js"></script>
+
+    <title>Covid Tracker</title>
+</head>
+
+<body>
+    <div id="card">
+        <div class="box">
+            <h2 class="h-secondary center title">COVID TRACKER</h2>
+        </div>
+
+        <div class="box" id="map">
+            <h2 class="h-secondary center"></h2>
+            <p class="center">
+                <script>
+                    var key = 'pk.eyJ1IjoicHJhc2hhbnQ2OTUiLCJhIjoiY2t0ZnVjcG12MGMxMTJ2anljdHFhNDJiNCJ9.4ukwjpum3X-3wTzeLvVTZw';
+                    L.mapbox.accessToken = key;
+                    var map = L.mapbox.map('map')
+                        .setView([10, -34.50], 4)
+                        .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
+                </script>
+        </div>
+        </p>
+    </div>
+    </section>
+
+</body>
+
+</html>

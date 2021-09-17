@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.title {
+    color: red;
+}
+
+#card {
+    margin: 14px;
+    display: flex;
+    flex-direction: row;
+}
+
+#card .box {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 7px;
+    background-color: rgb(232 232 232);
+    transition: all 1s ease-in-out .1s;
+}
+
+#card .box:hover {
+    box-shadow: 10px 13px 15px 0.1px rgb(90, 83, 26);
+}
+
+
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 12px;
+}
