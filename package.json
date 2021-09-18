@@ -1,7 +1,7 @@
 {
   "name": "pda",
   "version": "1.0.0",
-  "description": "Dance website with pure pug node.js express css js",
+  "description": "Covid Tracker",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
